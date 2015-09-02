@@ -240,11 +240,3 @@ class LogsManager
     }
 
 }
-
-
-$replace = new FullReplace();
-$replace->setPathProtect({path});
-$replace->setStringReplace({currentString});
-$replace->setNewString({newString});
-
-$replace->start();
