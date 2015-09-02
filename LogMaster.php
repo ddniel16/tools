@@ -1,5 +1,8 @@
 <?php
 /**
+ * Sistemas de log's en php, con las opciones de registrarlos en syslog o en un archivos custom,
+ * con las diferentes prioridades y en el caso de los por consola, con colores identificativos para cada
+ * tipo.
  *
  * @author ddniel16 <ddniel16@gmail.com>
  */
@@ -237,3 +240,11 @@ class LogsManager
     }
 
 }
+
+
+$replace = new FullReplace();
+$replace->setPathProtect({path});
+$replace->setStringReplace({currentString});
+$replace->setNewString({newString});
+
+$replace->start();

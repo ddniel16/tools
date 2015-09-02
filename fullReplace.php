@@ -1,7 +1,8 @@
 <?php
 /**
  * Busca en todos los contenidos del directorio asignado en setPathProtect y cambia los parametros exactos.
- * ddniel16@gmail.com
+ *
+ * @author ddniel16 <ddniel16@gmail.com>
  */
 class FullReplace
 {
@@ -139,10 +140,3 @@ class FullReplace
     }
 
 }
-
-$replace = new FullReplace();
-$replace->setPathProtect({path});
-$replace->setStringReplace({currentString});
-$replace->setNewString({newString});
-
-$replace->start();
